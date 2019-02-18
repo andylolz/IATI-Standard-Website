@@ -113,3 +113,6 @@ iati.tests.*
 
 #sqlite databases
 *.sqlite3
+
+#(temp) server config
+cloud-config
