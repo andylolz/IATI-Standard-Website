@@ -1,5 +1,4 @@
 """Settings for dev environments (overrides base settings)."""
-import env
 import os
 import dj_database_url
 from .base import *  # noqa: F401, F403 # pylint: disable=unused-wildcard-import, wildcard-import
@@ -9,7 +8,7 @@ DEBUG = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # Overwrite this variable in local.py with another unguessable string.
-SECRET_KEY = env.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

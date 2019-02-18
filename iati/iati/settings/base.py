@@ -178,6 +178,15 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+# Search backend
+
+WAGTAILSEARCH_BACKENDS = {
+    'default': {
+        'BACKEND': 'wagtail.search.backends.elasticsearch2',
+        'URLS': [os.getenv('ELASTICSEARCH_URL', 'http://localhost:9200')],
+        'INDEX': 'forestry',
+    },
+}
 
 # Wagtail settings
 

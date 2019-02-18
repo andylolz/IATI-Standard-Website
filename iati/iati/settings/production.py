@@ -8,7 +8,7 @@ DEBUG = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # Overwrite this variable in local.py with another unguessable string.
-SECRET_KEY = env.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
