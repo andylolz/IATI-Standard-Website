@@ -21,6 +21,5 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY requirements.txt /usr/src/app/
 COPY requirements_dev.txt /usr/src/app/
-COPY Procfile /usr/src/app/
 RUN pip3 install -r requirements_dev.txt
 
