@@ -188,6 +188,14 @@ WAGTAILSEARCH_BACKENDS = {
     },
 }
 
+WAGTAILSEARCH_BACKENDS = {
+    'default': {
+        'BACKEND': 'wagtail.search.backends.elasticsearch2',
+        'URLS': [os.getenv('ELASTICSEARCH_URL', 'http://localhost:9200')],
+        'INDEX': 'iati',
+    },
+}
+
 # Wagtail settings
 
 WAGTAIL_SITE_NAME = "iati"
