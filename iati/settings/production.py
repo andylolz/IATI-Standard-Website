@@ -12,7 +12,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-ALLOWED_HOSTS = ['0.0.0.0', '*.iatistandard.org', 'iatistandard.org']
+ALLOWED_HOSTS = [
+    '0.0.0.0',
+    '*.iatistandard.org',
+    '134.209.22.132',
+]
 
 DJANGO_ADMIN_USER = 'testuser'
 DJANGO_ADMIN_PASS = 'password'

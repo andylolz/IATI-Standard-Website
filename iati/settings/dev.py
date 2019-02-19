@@ -29,6 +29,7 @@ if 'TRAVIS' in os.environ:
             'PORT': '',
         }
     }
+    SECRET_KEY = 'enter-a-long-unguessable-string-here'
 else:
     DATABASES = {
         'default': dj_database_url.config()
