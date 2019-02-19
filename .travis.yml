@@ -14,7 +14,6 @@ install:
   - mkdir geckodriver
   - tar -xzf geckodriver*.tar.gz -C geckodriver
   - export PATH=$PATH:$PWD/geckodriver
-  - cd iati
   - pip install -r requirements_dev.txt
   - psql -c "CREATE DATABASE travisci;" -U postgres  # Must match DB name in iati.settings.dev
   - python manage.py makemigrations_translation
@@ -37,7 +36,6 @@ jobs:
             - mkdir geckodriver
             - tar -xzf geckodriver*.tar.gz -C geckodriver
             - export PATH=$PATH:$PWD/geckodriver
-            - cd iati
             - pip install -r requirements_dev.txt
             - psql -c "CREATE DATABASE travisci;" -U postgres  # Must match DB name in iati.settings.dev
             - python manage.py makemigrations_translation
