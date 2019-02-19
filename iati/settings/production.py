@@ -14,6 +14,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ALLOWED_HOSTS = [
     '0.0.0.0',
+    'iatistandard.org',
     '*.iatistandard.org',
     '134.209.22.132',
 ]
