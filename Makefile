@@ -1,5 +1,5 @@
 # folders
-IATI_FOLDER = .
+IATI_FOLDER = iati/
 
 # useful constants
 LINE_SEP = ---
